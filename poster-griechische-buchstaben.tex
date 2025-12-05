@@ -2,43 +2,58 @@
 
 
 \usepackage[svgnames]{xcolor} % Specify colors by their 'svgnames', for a full list of all colors available see here: http://www.latextemplates.com/svgnames-colors
+\usepackage{graphicx}
+\usepackage{adjustbox}
+
+\setlength{\voffset}{2cm}
 
 
 \begin{document}
 %\begin{minipage}[b]{1\linewidth}
     \begin{center}
-        \VERYHuge \color{NavyBlue} \textbf{Das griechische Alphabet} \color{Black}\\ % Title
-        \VeryHuge{in der Mathematik}\\[2.4cm] % Subtitle
+        \VERYHuge \sf \textbf{Das griechische Alphabet} \color{Black}\\ % Title
+%        \VeryHuge{in der Mathematik}\\[2.4cm] % Subtitle
     \end{center}
  %   \end{minipage}
 
-\huge
-\def\arraystretch{1.2}
-\begin{tabular}{lllp{0.6\linewidth}}
+\vspace{1cm}
+\Huge
+\def\arraystretch{1.05}
+\begin{tabular}{lllp{0.74\linewidth}}
 %    Gross & Klein & Aussprache  & Gebrauch \\
-    $A$ $\quad$ & $\alpha$ $\qquad$ & Alpha & \Large Variable für Winkel \\
-    $B$ & $\beta$ & Beta & \Large Variable für Winkel \\
-    $\Gamma$ & $\gamma$ & Gamma & \Large Variable für Winkel. Gravitationskonstante $\Gamma$. \\
+    $A\,\,$  & $\alpha$ $\,\,\,$ & Alpha & \Large Winkel, $\alpha$-Strahlung (Heliumkerne) \\
+    $B$ & $\beta$ & Beta & \Large Winkel $\beta$-Strahlung (Elektronen)\\
+    $\Gamma$ & $\gamma$ & Gamma & \Large Winkel, $\gamma$-Strahlung (Photonen), Gravitationskonstante $\Gamma$, \\
     $\Delta$ & $\delta$ & Delta & \Large Dreieck, z.B. $\Delta ABC$. Differenz, z.B. $m=\frac{\Delta y}{\Delta x}$\\  
-    $E$ & $\epsilon$, $\varepsilon$ & Epsilon & \Large Steht oft für eine sehr kleine positive reelle Zahl.\\
-    $Z$ & $\zeta$ & Zeta & \Large \\
+    $E$ & $\varepsilon$ & Epsilon & \Large $\varepsilon$ steht oft für eine sehr kleine positive reelle Zahl\\
+    $Z$ & $\zeta$ & Zeta & \Large Riemannsche $\zeta$-Funktion: $\displaystyle \zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s}$ mit  $\textrm{Re}(s)>1$\\[-6mm]
     $H$ & $\eta$ & Eta & \Large \\
-    $\Theta$ & $\theta$ & Theta & \Large Winkel in Polarkoordinaten\\
+    $\Theta$ & $\theta$ & Theta & \Large \\
     $I$ & $\iota$ & Iota & \Large \\
-    $K$ & $\kappa$ & Kappa & \Large \\
-    $\Lambda$ & $\lambda$ & Lambda & \Large Streckungsfaktor, Proportionalitätskonstante\\
-    $M$ & $\mu$ & Mü & \Large \\
-    $N$ & $\nu$ & Nü & \Large \\
+    $K$ & $\kappa$ & Kappa & \Large Krümmungsmass $\kappa$\\
+    $\Lambda$ & $\lambda$ & Lambda & \Large Streckungsfaktor $\lambda$ (Geometrie), Wellenlänge $\lambda$\\
+    $M$ & $\mu$ & Mü & \Large Mittelwert $\mu$, Massprefix für Millionstel: 1 $\mu$m = $10^{-6}$ m\\
+    $N$ & $\nu$ & Nü & \Large Frequenz bei Wellen $\nu$ \\
     $\Xi$ & $\xi$ & Xi & \Large \\
-    $O$ & $o$ & Omikron $\quad$ & \Large \\
-    $\Pi$ & $\pi$ & Pi & \Large Verhältnis von Kreisumfang zu Kreisdurchmesser.\\
+    $O$ & $o$ & Omikron $\,\,$ & \Large \\
+    $\Pi$ & $\pi$ & Pi & \Large Kreiszahl $\pi = 3.14159265358979\dots$, Produktzeichen $\prod$\\
     $P$ & $\rho$ & Rho & \Large Symbol für Dichte in der Physik.\\
-    $\Sigma$ & $\sigma$, $\varsigma$ & Sigma & \Large Summenzeichen $\sum$, Vorzeichenfunktionen $\sigma$.\\
-    $T$ & $\tau$ & Tau & \Large \\
+    $\Sigma$ & $\varsigma$ & Sigma & \Large Summenzeichen $\sum$, Standardabweichung $\sigma$\\
+    $T$ & $\tau$ & Tau & \Large Periodendauer $\tau$ einer Schwinung\\
     $Y$ & $\upsilon$ & Upsilon & \Large \\
-    $\Phi$ & $\phi$, $\varphi$ & Phi & \Large Variable für Winkel.\\
-    $X$ & $\chi$ & Chi & \Large \\
+    $\Phi$ & $\varphi$ & Phi & \Large Winkel, Euler-$\varphi$-Funktion, Goldener Schnitt $\Phi=\frac{\sqrt{5}+1}{2} = 1.618033988\ldots$\\
+    $X$ & $\chi$ & Chi & \Large $\chi$ Symbol für die Chi-Quadrat Verteilung (Statistik)\\
     $\Psi$ & $\psi$ & Psi & \Large \\
-    $\Omega$ & $\omega$ & Omega & \Large Mass für Widerstand (Ohm), Winkelgeschwindigkeit $\omega$\\
+    $\Omega$ & $\omega$ & Omega & \Large $\Omega$ Ohm (Widerstand), Winkelgeschwindigkeit $\omega$, kleinste Ordinalzahl $\omega$\\
 \end{tabular}
+
+\vspace{1.6cm}
+\begin{center}
+\adjustbox{valign=M}{\includegraphics[width=4cm]{by-nc-sa.pdf}} 
+\adjustbox{valign=M}{\small \sf (c) Ivo Blöchliger}
+%\adjustbox{valign=M}{{\small \tt https://github.com/techlabksbg/poster-griechische-buchstaben}}
+\adjustbox{valign=M}{{\small \sf \LaTeX{} sources on GitHub:}}
+\adjustbox{valign=M}{\includegraphics[height=2cm]{qrcode-github.png}} 
+\end{center}
+
 \end{document}
